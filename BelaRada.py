@@ -1,0 +1,22 @@
+import pygame
+pygame.init()
+prozor=pygame.display.set_mode((350,350))
+pygame.display.set_caption('Bela rada')
+prozor.fill(pygame.Color('green'))
+pygame.draw.rect(prozor, pygame.Color('yellow'), (100, 100, 152, 152))
+pygame.draw.rect(prozor, pygame.Color('white'), (100, 50, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (151, 50, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (202, 50, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (50, 100, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (50, 151, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (50, 202, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (252, 100, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (252, 151, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (252, 202, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (100, 252, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (151, 252, 50, 50))
+pygame.draw.rect(prozor, pygame.Color('white'), (202, 252, 50, 50))
+pygame.display.update()
+while pygame.event.wait().type!=pygame.QUIT:
+    pass
+pygame.quit()
